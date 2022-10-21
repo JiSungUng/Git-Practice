@@ -1,21 +1,23 @@
-// import MissionUtils from "@woowacourse/mission-utils";
+// 기능 및 게임 시작 분리!
+// function printNum() {
+//   const userInput = document.getElementById('user-input').value;
+//   document.getElementById('result').innerText = userInput;
+// }
 
-// console.log(MissionUtils.Random.pickNumberInList([1, 2, 3]));
-// const randNum = MissionUtils.Random.pickNumberInRange(1,9)
-// console.log(randNum);
+// function makePCNum() {
+//   const randNum = MissionUtils.Random.pickNumberInRange(1, 9);
+//   document.getElementById('pc-result').innerText = randNum
+// }
 
-// const userIn = document.getElementById('#user-input').innerHTML;
-// console.log(userIn);
+export default function BaseballGame() {
+  const computerInputNumbers = getComputerInput();
 
+  this.play = function(computerInputNumbers, userInputNumbers) {
+    return "결과 값 String"
+  }
 
-function printNum() {
-  const userInput = document.getElementById('user-input').value;
-  // console.log(userInput);
-  document.getElementById('result').innerText = userInput;
+  
 
 }
 
-function makePCNum() {
-  const randNum = MissionUtilis.Random.pickNumberInRange(1, 9);
-  document.getElementById('pc-result').innerText = randNum;
-}
+
